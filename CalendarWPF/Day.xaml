@@ -1,0 +1,43 @@
+﻿<Window x:Class="CalendarWPF.Day"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalendarWPF"
+        mc:Ignorable="d"
+        Title="Day" Height="500" Width="300" MinHeight="500">
+    <Grid Name="sportsTypeGrid" Margin="0,0,0,1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0" Margin="5,5,5,5" Click="Button_Click">
+            Назад
+        </Button>
+        <CheckBox Name="ch1" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Center" VerticalContentAlignment="Center">
+            <Image Source="sources/Football.png" Margin="5,5,5,5"/>
+        </CheckBox>
+        <CheckBox Name="ch2" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="2" VerticalAlignment="Center" VerticalContentAlignment="Center">
+            <Image Source="sources/Running.png" Margin="5,5,5,5"/>
+        </CheckBox>
+        <CheckBox Name="ch3" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="3" VerticalAlignment="Center" VerticalContentAlignment="Center">
+            <Image Source="sources/Swimming.png" Margin="5,5,5,5"/>
+        </CheckBox>
+        <CheckBox Name="ch4" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="4" VerticalAlignment="Center" VerticalContentAlignment="Center">
+            <Image Source="sources/Weightlifting.png" Margin="5,5,5,5"/>
+        </CheckBox>
+        <CheckBox Name="ch5" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="5" VerticalAlignment="Center" VerticalContentAlignment="Center">
+            <Image Source="sources/Yoga.png" Margin="5,5,5,5"/>
+        </CheckBox>
+        
+        <Button Grid.Row="6" Margin="5,5,5,5" Click="Button_Click_save">
+            Сохранить
+        </Button>
+    </Grid>
+</Window>
